@@ -41,7 +41,7 @@ public class GeneratorController {
 
 	@RequestMapping("/code/{tableName}")
 	public void code(HttpServletRequest request, HttpServletResponse response,
-                     @PathVariable("tableName") String tableName) throws IOException {
+			@PathVariable("tableName") String tableName) throws IOException {
 		String[] tableNames = new String[] { tableName };
 		byte[] data = generatorService.generatorCode(tableNames);
 		response.reset();

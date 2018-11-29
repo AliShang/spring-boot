@@ -11,11 +11,11 @@ import javax.servlet.http.HttpServletRequestWrapper;
  * <code>{@link XssHttpServletRequestWrapper}</code>
  * @author win7
  */  
-public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
-    HttpServletRequest orgRequest = null;
+public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {  
+    HttpServletRequest orgRequest = null;  
     private boolean isIncludeRichText = false;
   
-    public XssHttpServletRequestWrapper(HttpServletRequest request, boolean isIncludeRichText) {
+    public XssHttpServletRequestWrapper(HttpServletRequest request, boolean isIncludeRichText) {  
         super(request);  
         orgRequest = request;
         this.isIncludeRichText = isIncludeRichText;
@@ -72,7 +72,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
     * 
     * @return 
     */  
-    public HttpServletRequest getOrgRequest() {
+    public HttpServletRequest getOrgRequest() {  
         return orgRequest;  
     }  
   
@@ -81,7 +81,7 @@ public class XssHttpServletRequestWrapper extends HttpServletRequestWrapper {
     * 
     * @return 
     */  
-    public static HttpServletRequest getOrgRequest(HttpServletRequest req) {
+    public static HttpServletRequest getOrgRequest(HttpServletRequest req) {  
         if (req instanceof XssHttpServletRequestWrapper) {  
             return ((XssHttpServletRequestWrapper) req).getOrgRequest();  
         }  

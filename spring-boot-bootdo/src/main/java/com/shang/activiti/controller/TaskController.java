@@ -56,13 +56,13 @@ public class TaskController {
     }
 
     @GetMapping("/form/{procDefId}")
-    public void startForm(@PathVariable("procDefId") String procDefId  , HttpServletResponse response) throws IOException {
+    public void startForm(@PathVariable("procDefId") String procDefId  ,HttpServletResponse response) throws IOException {
         String formKey = actTaskService.getFormKey(procDefId, null);
         response.sendRedirect(formKey);
     }
 
     @GetMapping("/form/{procDefId}/{taskId}")
-    public void form(@PathVariable("procDefId") String procDefId, @PathVariable("taskId") String taskId , HttpServletResponse response) throws IOException {
+    public void form(@PathVariable("procDefId") String procDefId,@PathVariable("taskId") String taskId ,HttpServletResponse response) throws IOException {
         // 获取流程XML上的表单KEY
 
         String formKey = actTaskService.getFormKey(procDefId, taskId);

@@ -1,4 +1,4 @@
-package com.shang.domain;
+package com.shang.blog.domain;
 
 import java.io.Serializable;
 import java.util.Date;

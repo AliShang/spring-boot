@@ -42,7 +42,7 @@ public class ProcessServiceImpl implements ProcessService {
 
         BpmnJsonConverter converter = new BpmnJsonConverter();
         ObjectNode modelNode = converter.convertToJson(bpmnModel);
-        org.activiti.engine.repository.Model modelData = repositoryService.newModel();
+        Model modelData = repositoryService.newModel();
         modelData.setKey(processDefinition.getKey());
         modelData.setName(processDefinition.getResourceName());
         modelData.setCategory(processDefinition.getCategory());//.getDeploymentId());

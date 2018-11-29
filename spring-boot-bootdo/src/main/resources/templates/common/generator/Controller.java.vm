@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import ${package}.domain.${className}DO;
 import ${package}.service.${className}Service;
-import com.shangootdo.common.utils.PageUtils;
+import com.shang.common.utils.PageUtils;
 import com.shang.common.utils.Query;
 import com.shang.common.utils.R;
 

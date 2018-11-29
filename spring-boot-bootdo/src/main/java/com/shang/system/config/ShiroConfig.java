@@ -6,7 +6,6 @@ import com.shang.common.redis.shiro.RedisCacheManager;
 import com.shang.common.redis.shiro.RedisManager;
 import com.shang.common.redis.shiro.RedisSessionDAO;
 import com.shang.system.shiro.UserRealm;
-//import org.apache.shiro.cache.CacheManager;
 import net.sf.ehcache.CacheManager;
 import org.apache.shiro.cache.ehcache.EhCacheManager;
 import org.apache.shiro.mgt.SecurityManager;
@@ -18,17 +17,15 @@ import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSource
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
 import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
 import org.apache.shiro.web.session.mgt.DefaultWebSessionManager;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.cache.ehcache.EhCacheCacheManager;
-import org.springframework.cache.ehcache.EhCacheManagerFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.ClassPathResource;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.LinkedHashMap;
+
+//import org.apache.shiro.cache.CacheManager;
 
 /**
  * @author bootdo 1992lcg@163.com

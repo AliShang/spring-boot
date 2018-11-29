@@ -1,28 +1,29 @@
-package com.shang.service;
+package com.shang.blog.dao;
 
-import com.shang.domain.ContentDO;
+import com.shang.blog.domain.ContentDO;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 import java.util.Map;
 
 /**
  * 文章内容
- * 
  * @author chglee
  * @email 1992lcg@163.com
- * @date 2017-09-09 10:03:34
+ * @date 2017-10-03 16:17:48
  */
-public interface ContentService {
-	
+@Mapper
+public interface ContentDao {
+
 	ContentDO get(Long cid);
 	
 	List<ContentDO> list(Map<String, Object> map);
-	
+
 	int count(Map<String, Object> map);
 	
-	int save(ContentDO bContent);
+	int save(ContentDO content);
 	
-	int update(ContentDO bContent);
+	int update(ContentDO content);
 	
 	int remove(Long cid);
 	

@@ -241,7 +241,7 @@ public class ModelController extends BaseController{
     @GetMapping("/model/export/{id}")
     public void exportToXml(@PathVariable("id") String id, HttpServletResponse response) {
         try {
-            org.activiti.engine.repository.Model modelData = repositoryService.getModel(id);
+            Model modelData = repositoryService.getModel(id);
             BpmnJsonConverter jsonConverter = new BpmnJsonConverter();
             JsonNode editorNode = new ObjectMapper().readTree(repositoryService.getModelEditorSource(modelData.getId()));
             BpmnModel bpmnModel = jsonConverter.convertToBpmnModel(editorNode);
