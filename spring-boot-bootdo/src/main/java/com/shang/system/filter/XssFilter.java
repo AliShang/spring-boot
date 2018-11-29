@@ -19,7 +19,7 @@ import java.util.regex.Pattern;
  * 通过Jsoup过滤请求参数内的特定字符
  * @author yangwk 
  */  
-public class XssFilter implements Filter {
+public class XssFilter implements Filter {  
 	private static Logger logger = LoggerFactory.getLogger(XssFilter.class);
 
 	/**
@@ -30,7 +30,7 @@ public class XssFilter implements Filter {
 	public List<String> excludes = new ArrayList<>();
   
     @Override
-	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException, ServletException {
+	public void doFilter(ServletRequest request, ServletResponse response, FilterChain filterChain) throws IOException,ServletException {
     	if(logger.isDebugEnabled()){
   			logger.debug("xss filter is open");
   		}

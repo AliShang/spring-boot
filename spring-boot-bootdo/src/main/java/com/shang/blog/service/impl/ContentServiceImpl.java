@@ -1,8 +1,8 @@
-package com.shang.service.impl;
+package com.shang.blog.service.impl;
 
-import com.shang.dao.ContentDao;
-import com.shang.domain.ContentDO;
-import com.shang.service.ContentService;
+import com.shang.blog.dao.ContentDao;
+import com.shang.blog.domain.ContentDO;
+import com.shang.blog.service.ContentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

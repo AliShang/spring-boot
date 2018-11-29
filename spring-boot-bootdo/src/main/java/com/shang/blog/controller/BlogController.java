@@ -1,7 +1,7 @@
-package com.shang.controller;
+package com.shang.blog.controller;
 
-import com.shang.domain.ContentDO;
-import com.shang.service.ContentService;
+import com.shang.blog.domain.ContentDO;
+import com.shang.blog.service.ContentService;
 import com.shang.common.utils.DateUtils;
 import com.shang.common.utils.PageUtils;
 import com.shang.common.utils.Query;

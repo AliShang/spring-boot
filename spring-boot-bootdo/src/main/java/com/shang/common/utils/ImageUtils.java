@@ -27,7 +27,7 @@ public class ImageUtils {
      * @throws IOException
      * @date
      */
-    public static BufferedImage cutImage(MultipartFile file, int x, int y, int w, int h, String prefix) {
+    public static BufferedImage cutImage(MultipartFile file, int x, int y, int w, int h,String prefix) {
 
         Iterator iterator = ImageIO.getImageReadersByFormatName(prefix);
         try {
